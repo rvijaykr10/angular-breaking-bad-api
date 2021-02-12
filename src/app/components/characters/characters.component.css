@@ -1,0 +1,47 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  margin: 10px 0;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.spinner img {
+  width: "200px";
+  height: "200px";
+  margin: "auto";
+  display: "block";
+}
+
+mat-card,
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+}
+
+mat-card img {
+  width: 100px;
+  height: 400px;
+}
+
+.paginator {
+  bottom: 100vh;
+}

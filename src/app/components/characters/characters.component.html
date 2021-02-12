@@ -1,0 +1,24 @@
+<div class="logo">
+  <img src="../../../assets/images/logo.png" alt="" />
+</div>
+
+<div *ngIf="loading" class="spinner">
+  <img src="../../../assets/images/spinner.gif" alt="" />
+</div>
+
+<mat-grid-list *ngIf="!loading" cols="4">
+  <mat-grid-tile *ngFor="let character of characters">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ character.name }}</mat-card-title>
+        <mat-card-subtitle>AKA:{{ character.nickname }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ character.img }}" alt="pic.jpg" />
+      <mat-card-content>
+        <p>Real Name: {{ character.portrayed }}</p>
+        <p>Status: {{ character.status }}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
